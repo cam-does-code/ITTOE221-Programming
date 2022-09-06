@@ -22,11 +22,9 @@
 # print(max(liste))
 while(True):
   hobbydictionary = {
-    "person1": "thing1",
-    "person2": "thing2",
-    "person3": "thing3",
-    "person4": "thing4",
-    "person5": "thing5"
+    "Ibrahim": "fodbold",
+    "Niels": "D&D",
+    "Benny": "golf",
   }
   #print(hobbydictionary)
   print(hobbydictionary[input("Skriv hvad du vil søge på: \n")])
