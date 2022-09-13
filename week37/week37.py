@@ -32,13 +32,16 @@ for i in range(80):
     if vurdering[i] < 8.0:
         print(titel[i])
 
-#Print all totles above a length of 10 chars
+#Print all titles above a length of 10 chars
 for i in titel:
     if(len(i) > 10):
         print(i)
 
+#Counts number of metascores above 80
 count = 0
 for i in metascore:
     if(i > 80):
         count = count+1
-        print(count)
+print(count)
+
+print(len(titel))
