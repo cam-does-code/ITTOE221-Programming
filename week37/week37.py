@@ -24,14 +24,21 @@ antal_vurderinger = list(table['Votes'])
 instruktører = list(table['Director'])
 
 #Prints the first 10 titles
-# for i in range(10):
-#     print(titel[i])
+for i in range(10):
+    print(titel[i])
 
-# #Prints tiles with rating < 8.0 in the first 80 titles
-# for i in range(80):
-#     if vurdering[i] < 8.0:
-#         print(titel[i])
+#Prints tiles with rating < 8.0 in the first 80 titles
+for i in range(80):
+    if vurdering[i] < 8.0:
+        print(titel[i])
 
+#Print all totles above a length of 10 chars
 for i in titel:
     if(len(i) > 10):
         print(i)
+
+count = 0
+for i in metascore:
+    if(i > 80):
+        count = count+1
+        print(count)
