@@ -59,10 +59,24 @@ instruktører = list(table['Director'])
 #     if(i == 'Wes Anderson'):
 #         print(i)
 
-counter = 0
-for i in range(len(instruktører)):
-    if instruktører[i] == 'Hayao Miyazaki':
-        counter += 1
-print(counter)
+# counter = 0
+# for i in range(len(instruktører)):
+#     if instruktører[i] == 'Hayao Miyazaki':
+#         counter += 1
+# print(counter)
 
-print(instruktører.count('Hayao Miyazaki'))
+# print(instruktører.count('Hayao Miyazaki'))
+
+# counts = 0
+# for i in vurdering:
+#     if(i > 8.0):
+#         counts += 1
+# print(counts)
+
+i = 0
+temp = år[0]
+while(i < len(år)):
+    if(år[i] < temp):
+        temp = år[i]
+    i += 1
+print(temp)
