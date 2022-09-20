@@ -13,11 +13,25 @@
 # Kør funktionen med forskellige kombinationer af temperatur og luftfugtigheds input-parametre for at tjekke om den gør det den skal.
 
 def temp_humidity_checker(temp, humidity):
-    if(temp < 0 or temp > 50):
+    if(temp <= 0 or temp >= 50):
         print("Temparatur er udenfor det godkendte område")
-    if(humidity < 20 or humidity > 90):
+    if(humidity <= 20 or humidity >= 90):
         print("Luftfugtighed er udenfor det godkendte område")
     return
 
+def temp_checker(temp):
+    if(temp <= 0 or temp >= 50):
+        return("Temparatur er udenfor det godkendte område: ", temp)
 
-temp_humidity_checker(30,90)
+def humidity_checker(humidity):
+    if(humidity <= 20 or humidity >= 90):
+        return("Luftfugtighed er udenfor det godkendte område: ", humidity)
+
+def temperature_multi_check(*temps):
+    count = 0
+    for temp in temps:
+        if(temp <= 0 or temp >= 50):
+            count += 1
+    return(str(count) + " temperaturer er udenfor det godkendte område")
+
+print(temperature_multi_check(20, 30, 56, 90, 10, -1))
